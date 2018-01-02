@@ -1,21 +1,20 @@
-//variable y Tipos
 
-var na:string = "Aram",
-   age:number = 19,
-   programer:boolean = true,
-   langs:Array<string> =["php","JS","Go"],
-   etiqueta = <HTMLElement>document.getElementById("container");
+//  Funciones y Tipado 
 
-    etiqueta.innerHTML = na+" "+age+" "+programer+" "+langs[0];
-
-
-    // var - let
-var a:number = 7;
-var b:number = 12;
-
-if(a === 7){
-	let a = 4;
-	 b -= 1;
-
-	console.log(a+" "+b);
+function numero(num:number):string{
+    return "Hola "+num;
 }
+
+function string(texto:string):number{
+	if(texto == "hola"){
+		var num = 66;
+	}
+	else{
+		 num = 90;
+	}
+
+	return num;
+}
+alert(numero(19));
+
+alert(string("aram"));
